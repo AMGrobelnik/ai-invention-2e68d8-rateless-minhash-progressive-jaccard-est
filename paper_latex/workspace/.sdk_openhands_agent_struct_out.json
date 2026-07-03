@@ -1,0 +1,16 @@
+{
+  "title": "Rateless MinHash: Progressive Jaccard Estimation via Fountain Codes",
+  "summary": "This paper presents Rateless MinHash, the first MinHash variant enabling progressive Jaccard similarity estimation using fountain code principles. The complete paper (16 pages, compiled to PDF) includes: (1) Introduction and problem statement covering the limitation of fixed sketch sizes in standard MinHash; (2) Related work on MinHash variants, fountain codes, rate-distortion theory, and progressive estimation; (3) Methods section with the Rateless MinHash algorithm (encoding, progressive decoding, adaptive stopping), plus theoretical analysis of dependency structure proving MSE penalty = 1 + d^2/k^2; (4) Experiments on synthetic and real-world datasets showing 55-80% MSE reduction from progressive estimation, adaptive space efficiency (~853 bits vs fixed 1024+ bits), and honest comparison against adaptive baselines; (5) Discussion of limitations (computational overhead, theoretical gaps) and future work; (6) Conclusion. All 5 figures from available_figures are included: fig1 (overview diagram), fig2 (MSE vs hash values), fig3 (non-monotonic behavior), fig4 (statistical efficiency trade-off), fig5 (aggregation function comparison). The references.bib file contains 15 BibTeX entries for all cited works. The paper compiles without errors (only minor warnings about empty journal fields and underfull hboxes). The PDF is ready for submission.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig1_v0.jpg",
+      "figures/fig2_v0.jpg",
+      "figures/fig3_v0.jpg",
+      "figures/fig4_v0.jpg",
+      "figures/fig5_v0.jpg"
+    ]
+  }
+}

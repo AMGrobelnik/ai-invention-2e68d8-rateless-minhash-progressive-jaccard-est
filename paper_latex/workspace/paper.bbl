@@ -1,0 +1,110 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Broder(1997)]{Broder1997}
+Andrei~Z. Broder.
+\newblock On the resemblance and containment of documents.
+\newblock pages 21--29, 1997.
+\newblock \doi{10.1109/SEQUEN.1997.666900}.
+
+\bibitem[contributors(2023)]{Wikipedia2023}
+Wikipedia contributors.
+\newblock Rate-distortion theory.
+\newblock \url{https://en.wikipedia.org/wiki/Rate-distortion_theory}, 2023.
+
+\bibitem[Cormode et~al.(2012)Cormode, Garofalakis, Haas, and
+  Jermaine]{Cormode2012}
+Graham Cormode, Minos Garofalakis, Peter~J. Haas, and Chris Jermaine.
+\newblock Sketch techniques for approximate query processing.
+\newblock \emph{Foundations and Trends in Databases}, 4\penalty0
+  (1--3):\penalty0 1--294, 2012.
+\newblock \doi{10.1561/1900000004}.
+
+\bibitem[Cover and Thomas(1991)]{Cover1991}
+Thomas~M. Cover and Joy~A. Thomas.
+\newblock \emph{Elements of Information Theory}.
+\newblock John Wiley \& Sons, 1991.
+
+\bibitem[Ertl(2019)]{Ertl2019}
+Otmar Ertl.
+\newblock Probminhash -- a class of locality-sensitive hash algorithms for the
+  (probability) jaccard similarity.
+\newblock \emph{IEEE Transactions on Knowledge and Data Engineering},
+  34\penalty0 (7):\penalty0 3491--3506, 2019.
+\newblock \doi{10.1109/TKDE.2020.3021176}.
+
+\bibitem[Ertl(2021)]{Ertl2021}
+Otmar Ertl.
+\newblock Setsketch: Filling the gap between minhash and hyperloglog.
+\newblock \emph{Proceedings of the VLDB Endowment}, 14\penalty0 (11):\penalty0
+  2438--2450, 2021.
+\newblock \doi{10.14778/3457390.3457394}.
+
+\bibitem[Ioffe(2010)]{Ioffe2010}
+Sergey Ioffe.
+\newblock Improved consistent sampling, weighted minhash and l1 sketching.
+\newblock In \emph{Proceedings of the 2010 IEEE International Conference on
+  Data Mining}, pages 246--255, 2010.
+\newblock \doi{10.1109/ICDM.2010.80}.
+
+\bibitem[Li and K{\"o}nig(2009)]{Li2009}
+Ping Li and Arnd K{\"o}nig.
+\newblock b-bit minwise hashing.
+\newblock In \emph{Proceedings of the 18th International Conference on World
+  Wide Web}, pages 671--680, 2009.
+\newblock \doi{10.1145/1526709.1526800}.
+
+\bibitem[Li and K{\"o}nig(2011)]{Li2011}
+Ping Li and Arnd K{\"o}nig.
+\newblock Theory and applications of b-bit minwise hashing.
+\newblock \emph{Communications of the ACM}, 54\penalty0 (8):\penalty0 101--109,
+  2011.
+\newblock \doi{10.1145/1978542.1978566}.
+
+\bibitem[Li et~al.(2014)Li, Owen, and Zhang]{Li2014}
+Ping Li, Art~B. Owen, and Cun-Hui Zhang.
+\newblock One permutation minhash.
+\newblock In \emph{Proceedings of the 31st International Conference on Machine
+  Learning}, pages 166--174, 2014.
+
+\bibitem[Luby(2002)]{Luby2002}
+Michael Luby.
+\newblock Lt codes.
+\newblock \emph{IEEE Transactions on Information Theory}, 50\penalty0
+  (3):\penalty0 588--597, 2002.
+\newblock \doi{10.1109/TIT.2002.1009229}.
+
+\bibitem[Mitzenmacher et~al.(2014)Mitzenmacher, Pagh, and
+  Pham]{Mitzenmacher2014}
+M.~Mitzenmacher, R.~Pagh, and Ninh~D. Pham.
+\newblock Efficient estimation for high similarities using odd sketches.
+\newblock In \emph{Proceedings of the 23rd International Conference on World
+  Wide Web}, 2014.
+\newblock \doi{10.1145/2566486.2568017}.
+
+\bibitem[Pagh et~al.(2014)Pagh, St{\"o}ckel, and Woodruff]{Pagh2014}
+R.~Pagh, Morten St{\"o}ckel, and David~P. Woodruff.
+\newblock Is min-wise hashing optimal for summarizing set intersection?
+\newblock In \emph{Proceedings of the 33rd ACM SIGMOD-SIGACT-SIGART Symposium
+  on Principles of Database Systems}, 2014.
+\newblock \doi{10.1145/2594538.2594554}.
+
+\bibitem[Shokrollahi(2006)]{Shokrollahi2006}
+Amin Shokrollahi.
+\newblock Raptor codes.
+\newblock \emph{IEEE Transactions on Information Theory}, 52\penalty0
+  (6):\penalty0 2551--2567, 2006.
+\newblock \doi{10.1109/TIT.2006.874390}.
+
+\bibitem[Shrivastava(2017)]{Shrivastava2017}
+Anshumali Shrivastava.
+\newblock Densified one permutation minhash.
+\newblock In \emph{Proceedings of the 23rd ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, pages 1155--1164, 2017.
+\newblock \doi{10.1145/3097983.3098058}.
+
+\end{thebibliography}
