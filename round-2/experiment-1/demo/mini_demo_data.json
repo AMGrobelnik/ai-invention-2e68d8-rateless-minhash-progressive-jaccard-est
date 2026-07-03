@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "method": "Rateless MinHash Evaluation Demo",
+    "description": "Minimal demo dataset for Rateless MinHash vs Standard MinHash comparison",
+    "parameters": {
+      "max_positions": 16,
+      "num_bootstrap": 5,
+      "max_pairs": 10
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "quora_demo",
+      "examples": [
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.4000",
+          "metadata_dataset": "quora_demo",
+          "metadata_true_jaccard": 0.4,
+          "metadata_similarity_level": "synthetic",
+          "metadata_duplicate_id": "dup_1",
+          "metadata_tokens": ["how", "to", "learn", "python", "programming", "tutorial", "beginner"],
+          "predict_rateless_minhash": "0.0312",
+          "predict_standard_minhash": "0.0625"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5000",
+          "metadata_dataset": "quora_demo",
+          "metadata_true_jaccard": 0.5,
+          "metadata_similarity_level": "synthetic",
+          "metadata_duplicate_id": "dup_1",
+          "metadata_tokens": ["how", "to", "learn", "python", "coding", "guide", "start"],
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5385",
+          "metadata_dataset": "quora_demo",
+          "metadata_true_jaccard": 0.5384615384615384,
+          "metadata_similarity_level": "synthetic",
+          "metadata_duplicate_id": "dup_2",
+          "metadata_tokens": ["best", "way", "to", "master", "machine", "learning", "algorithms"],
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.3333",
+          "metadata_dataset": "quora_demo",
+          "metadata_true_jaccard": 0.3333333333333333,
+          "metadata_similarity_level": "synthetic",
+          "metadata_duplicate_id": "dup_2",
+          "metadata_tokens": ["best", "approach", "for", "mastering", "ml", "algorithms", "practice"],
+          "predict_rateless_minhash": "0.0312",
+          "predict_standard_minhash": "0.0312"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5098",
+          "metadata_dataset": "quora_demo",
+          "metadata_true_jaccard": 0.5098039215686274,
+          "metadata_similarity_level": "synthetic",
+          "metadata_duplicate_id": "dup_3",
+          "metadata_tokens": ["what", "are", "good", "resources", "for", "data", "science"],
+          "predict_rateless_minhash": "0.0625",
+          "predict_standard_minhash": "0.0625"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5098",
+          "metadata_dataset": "quora_demo",
+          "metadata_true_jaccard": 0.5098039215686274,
+          "metadata_similarity_level": "synthetic",
+          "metadata_duplicate_id": "dup_3",
+          "metadata_tokens": ["what", "resources", "recommend", "for", "learning", "data", "analytics"],
+          "predict_rateless_minhash": "0.0625",
+          "predict_standard_minhash": "0.0625"
+        }
+      ]
+    }
+  ]
+}

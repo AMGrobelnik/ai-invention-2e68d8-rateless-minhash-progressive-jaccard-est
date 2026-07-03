@@ -1,0 +1,153 @@
+{
+  "datasets": [
+    {
+      "dataset": "quora",
+      "description": "Quora duplicate questions dataset",
+      "examples": [
+        {
+          "input": "How imminent is world war III?",
+          "output": "1",
+          "metadata_source_dataset": "quora",
+          "metadata_duplicate_id": "quora_198714",
+          "metadata_similarity_level": "duplicate",
+          "metadata_document_length": 6,
+          "metadata_tokens": [
+            "how",
+            "imminent",
+            "is",
+            "world",
+            "war",
+            "iii"
+          ],
+          "metadata_label": 1
+        },
+        {
+          "input": "How do I start preparation for IAS?",
+          "output": "1",
+          "metadata_source_dataset": "quora",
+          "metadata_duplicate_id": "quora_225933",
+          "metadata_similarity_level": "duplicate",
+          "metadata_document_length": 7,
+          "metadata_tokens": [
+            "how",
+            "do",
+            "i",
+            "start",
+            "preparation",
+            "for",
+            "ias"
+          ],
+          "metadata_label": 1
+        }
+      ]
+    },
+    {
+      "dataset": "ms_marco",
+      "description": "MS MARCO passage retrieval dataset",
+      "examples": [
+        {
+          "input": "This video provides step-by-step instructions for replacing the gas valve assembly on York, Luxaire, and Coleman furnaces.",
+          "output": "0",
+          "metadata_source_dataset": "ms_marco",
+          "metadata_duplicate_id": null,
+          "metadata_similarity_level": null,
+          "metadata_document_length": 19,
+          "metadata_tokens": [
+            "this",
+            "video",
+            "provides",
+            "step",
+            "by",
+            "step",
+            "instructions",
+            "for",
+            "replacing",
+            "the",
+            "gas",
+            "valve",
+            "assembly",
+            "on",
+            "york",
+            "luxaire",
+            "and",
+            "coleman",
+            "furnaces"
+          ],
+          "metadata_query_id": 24670
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "description": "Synthetic near-duplicate pairs with controlled Jaccard similarity",
+      "examples": [
+        {
+          "input": "I was recently hired at Accenture in the Netherlands in technology consultancy.",
+          "output": "1",
+          "metadata_source_dataset": "synthetic",
+          "metadata_duplicate_id": "synthetic_927_duplicate",
+          "metadata_similarity_level": "original",
+          "metadata_document_length": 11,
+          "metadata_tokens": [
+            "i",
+            "was",
+            "recently",
+            "hired",
+            "at",
+            "accenture",
+            "in",
+            "the",
+            "netherlands",
+            "in",
+            "technology",
+            "consultancy"
+          ]
+        },
+        {
+          "input": "how do i get over added_728 someone i have known my own life",
+          "output": "1",
+          "metadata_source_dataset": "synthetic",
+          "metadata_duplicate_id": "synthetic_847",
+          "metadata_similarity_level": "near_duplicate",
+          "metadata_document_length": 12,
+          "metadata_tokens": [
+            "how",
+            "do",
+            "i",
+            "get",
+            "over",
+            "added_728",
+            "someone",
+            "i",
+            "have",
+            "known",
+            "my",
+            "own",
+            "life"
+          ]
+        }
+      ]
+    }
+  ],
+  "dataset_info": {
+    "total_datasets": 6,
+    "datasets_included": [
+      "quora",
+      "ms_marco",
+      "synthetic"
+    ],
+    "total_examples_in_full": 163308,
+    "similarity_levels": [
+      "duplicate",
+      "different",
+      "original",
+      "near_duplicate",
+      "jaccard_0.1",
+      "jaccard_0.3",
+      "jaccard_0.5",
+      "jaccard_0.7",
+      "jaccard_0.9"
+    ],
+    "description": "Near-duplicate text datasets for MinHash evaluation. Contains 6 datasets with 163K documents and 17.6K duplicate pairs."
+  }
+}
