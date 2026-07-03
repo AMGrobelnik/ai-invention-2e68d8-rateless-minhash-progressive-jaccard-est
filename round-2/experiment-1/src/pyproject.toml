@@ -1,0 +1,11 @@
+[project]
+name = "rateless-minhash-experiment"
+version = "0.1.0"
+description = "Rateless MinHash evaluation experiment"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy==2.5.0",
+    "matplotlib==3.11.0",
+    "tqdm==4.68.3",
+    "loguru==0.7.3",
+]

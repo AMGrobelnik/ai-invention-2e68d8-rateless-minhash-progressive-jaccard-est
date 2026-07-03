@@ -1,0 +1,132 @@
+{
+  "metadata": {
+    "method_name": "Rateless MinHash",
+    "description": "Progressive MinHash with Fountain Code Principles",
+    "experiments": [
+      "error_vs_sketch",
+      "progressive_estimation",
+      "space_efficiency"
+    ],
+    "parameters": {
+      "k_values": [
+        16,
+        32,
+        64
+      ],
+      "max_stream_len": 128,
+      "num_base_hashes": 128,
+      "num_pairs": 50,
+      "set_size": 100
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "experiment_1_error_vs_sketch",
+      "examples": [
+        {
+          "input": "Standard MinHash with k=16",
+          "output": "MSE=0.014029, std=0.021016",
+          "metadata_k": 16,
+          "metadata_mse": 0.014028857230533825,
+          "metadata_std": 0.02101598847113874
+        },
+        {
+          "input": "Standard MinHash with k=32",
+          "output": "MSE=0.005571, std=0.008497",
+          "metadata_k": 32,
+          "metadata_mse": 0.0055705968423496325,
+          "metadata_std": 0.008496878825782282
+        },
+        {
+          "input": "Standard MinHash with k=64",
+          "output": "MSE=0.002241, std=0.002541",
+          "metadata_k": 64,
+          "metadata_mse": 0.0022412008010709826,
+          "metadata_std": 0.0025412317274414098
+        }
+      ]
+    },
+    {
+      "dataset": "experiment_2_progressive_estimation",
+      "examples": [
+        {
+          "input": "Rateless MinHash progressive estimation for true Jaccard=0.1",
+          "output": "Final MSE=0.001692",
+          "metadata_target_jaccard": 0.1,
+          "metadata_final_mse": 0.001692391155912254,
+          "metadata_mse_curve": [
+            0.009781427363844948,
+            0.02489131747373505,
+            0.014299131881549465
+          ],
+          "metadata_estimate_curve": [
+            0.0,
+            0.05,
+            0.03333333333333333
+          ]
+        },
+        {
+          "input": "Rateless MinHash progressive estimation for true Jaccard=0.3",
+          "output": "Final MSE=0.002705",
+          "metadata_target_jaccard": 0.3,
+          "metadata_final_mse": 0.0027051318614674694,
+          "metadata_mse_curve": [
+            0.2905211671445437,
+            0.10026142688480351,
+            0.03684151346489008
+          ],
+          "metadata_estimate_curve": [
+            0.5,
+            0.4,
+            0.3666666666666667
+          ]
+        },
+        {
+          "input": "Rateless MinHash progressive estimation for true Jaccard=0.5",
+          "output": "Final MSE=0.005279",
+          "metadata_target_jaccard": 0.5,
+          "metadata_final_mse": 0.005278934607077717,
+          "metadata_mse_curve": [
+            0.25304076631766537,
+            0.10005569169079971,
+            0.07128288903740007
+          ],
+          "metadata_estimate_curve": [
+            0.7,
+            0.5,
+            0.4333333333333333
+          ]
+        }
+      ]
+    },
+    {
+      "dataset": "experiment_3_space_efficiency",
+      "examples": [
+        {
+          "input": "Standard MinHash with k=16",
+          "output": "Avg error=0.0911, Bits=512.0",
+          "predict_baseline": "error=0.0911",
+          "metadata_k": 16,
+          "metadata_avg_error": 0.09105915190108473,
+          "metadata_avg_bits": 512.0
+        },
+        {
+          "input": "Standard MinHash with k=32",
+          "output": "Avg error=0.0559, Bits=1024.0",
+          "predict_baseline": "error=0.0559",
+          "metadata_k": 32,
+          "metadata_avg_error": 0.05593722714169211,
+          "metadata_avg_bits": 1024.0
+        },
+        {
+          "input": "Standard MinHash with k=64",
+          "output": "Avg error=0.0394, Bits=2048.0",
+          "predict_baseline": "error=0.0394",
+          "metadata_k": 64,
+          "metadata_avg_error": 0.039378175284531046,
+          "metadata_avg_bits": 2048.0
+        }
+      ]
+    }
+  ]
+}

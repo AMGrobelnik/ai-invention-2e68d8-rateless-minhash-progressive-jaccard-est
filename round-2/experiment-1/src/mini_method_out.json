@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "method": "Rateless MinHash Evaluation",
+    "description": "Comparison of Rateless MinHash vs Standard MinHash",
+    "parameters": {
+      "max_positions": 32,
+      "num_bootstrap": 20,
+      "max_pairs": 60
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "quora",
+      "examples": [
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.4000",
+          "metadata_dataset": "quora",
+          "metadata_true_jaccard": 0.4,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0312",
+          "predict_standard_minhash": "0.0625"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5000",
+          "metadata_dataset": "quora",
+          "metadata_true_jaccard": 0.5,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5385",
+          "metadata_dataset": "quora",
+          "metadata_true_jaccard": 0.5384615384615384,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        }
+      ]
+    },
+    {
+      "dataset": "ms_marco",
+      "examples": [
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.3944",
+          "metadata_dataset": "ms_marco",
+          "metadata_true_jaccard": 0.39436619718309857,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0938",
+          "predict_standard_minhash": "0.0625"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.3333",
+          "metadata_dataset": "ms_marco",
+          "metadata_true_jaccard": 0.3333333333333333,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0312",
+          "predict_standard_minhash": "0.0312"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5098",
+          "metadata_dataset": "ms_marco",
+          "metadata_true_jaccard": 0.5098039215686274,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0625",
+          "predict_standard_minhash": "0.0625"
+        }
+      ]
+    },
+    {
+      "dataset": "20_newsgroups",
+      "examples": [
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.6968",
+          "metadata_dataset": "20_newsgroups",
+          "metadata_true_jaccard": 0.6967765434347113,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.1864",
+          "metadata_dataset": "20_newsgroups",
+          "metadata_true_jaccard": 0.1864406779661017,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0312",
+          "predict_standard_minhash": "0.0312"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5035",
+          "metadata_dataset": "20_newsgroups",
+          "metadata_true_jaccard": 0.5034722222222222,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0312",
+          "predict_standard_minhash": "0.0312"
+        }
+      ]
+    },
+    {
+      "dataset": "ag_news",
+      "examples": [
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.3091",
+          "metadata_dataset": "ag_news",
+          "metadata_true_jaccard": 0.3090909090909091,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5694",
+          "metadata_dataset": "ag_news",
+          "metadata_true_jaccard": 0.5694444444444444,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.5455",
+          "metadata_dataset": "ag_news",
+          "metadata_true_jaccard": 0.5454545454545454,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0938",
+          "predict_standard_minhash": "0.0312"
+        }
+      ]
+    },
+    {
+      "dataset": "c4",
+      "examples": [
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.2879",
+          "metadata_dataset": "c4",
+          "metadata_true_jaccard": 0.2879177377892031,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0312"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.6059",
+          "metadata_dataset": "c4",
+          "metadata_true_jaccard": 0.6059113300492611,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.1719",
+          "metadata_dataset": "c4",
+          "metadata_true_jaccard": 0.171875,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0000"
+        }
+      ]
+    },
+    {
+      "dataset": "synthetic",
+      "examples": [
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.3208",
+          "metadata_dataset": "synthetic",
+          "metadata_true_jaccard": 0.32075471698113206,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0625",
+          "predict_standard_minhash": "0.1875"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.4348",
+          "metadata_dataset": "synthetic",
+          "metadata_true_jaccard": 0.43478260869565216,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0938",
+          "predict_standard_minhash": "0.0625"
+        },
+        {
+          "input": "Estimate Jaccard similarity between two documents",
+          "output": "True Jaccard: 0.4412",
+          "metadata_dataset": "synthetic",
+          "metadata_true_jaccard": 0.4411764705882353,
+          "metadata_similarity_level": "synthetic",
+          "predict_rateless_minhash": "0.0000",
+          "predict_standard_minhash": "0.0312"
+        }
+      ]
+    }
+  ]
+}

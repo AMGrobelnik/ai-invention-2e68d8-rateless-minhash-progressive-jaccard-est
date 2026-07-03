@@ -1,0 +1,58 @@
+{
+  "total_documents": 163308,
+  "total_duplicate_pairs": 17656,
+  "total_tokens": 10903319,
+  "avg_document_length": 66.76530849682808,
+  "file_size_mb": 254.2848300933838,
+  "datasets": {
+    "quora": {
+      "total": 50000,
+      "with_duplicates": 1156,
+      "total_tokens": 565173
+    },
+    "20_newsgroups": {
+      "total": 15314,
+      "with_duplicates": 4000,
+      "total_tokens": 3147781
+    },
+    "ms_marco": {
+      "total": 35994,
+      "with_duplicates": 6000,
+      "total_tokens": 2506297
+    },
+    "c4": {
+      "total": 7000,
+      "with_duplicates": 2000,
+      "total_tokens": 2543535
+    },
+    "ag_news": {
+      "total": 54000,
+      "with_duplicates": 4000,
+      "total_tokens": 2116314
+    },
+    "synthetic": {
+      "total": 1000,
+      "with_duplicates": 500,
+      "total_tokens": 24219
+    }
+  },
+  "similarity_levels": {
+    "duplicate": 18354,
+    "different": 31646,
+    "original": 500,
+    "near_duplicate": 500,
+    "jaccard_0.1": 1802,
+    "jaccard_0.9": 1277,
+    "jaccard_0.7": 1521,
+    "jaccard_0.5": 1919,
+    "jaccard_0.3": 1481
+  },
+  "schema_validation": {
+    "has_id": true,
+    "has_text": true,
+    "has_tokens": true,
+    "has_metadata": true,
+    "metadata_has_source": true,
+    "metadata_has_duplicate_id": true
+  }
+}

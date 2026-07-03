@@ -1,0 +1,38 @@
+{
+  "total_documents": 147308,
+  "duplicate_pairs": 1656,
+  "datasets": {
+    "quora": {
+      "total": 50000,
+      "with_duplicates": 1156
+    },
+    "20_newsgroups": {
+      "total": 11314,
+      "with_duplicates": 0
+    },
+    "ms_marco": {
+      "total": 29994,
+      "with_duplicates": 0
+    },
+    "c4": {
+      "total": 5000,
+      "with_duplicates": 0
+    },
+    "ag_news": {
+      "total": 50000,
+      "with_duplicates": 0
+    },
+    "synthetic": {
+      "total": 1000,
+      "with_duplicates": 500
+    }
+  },
+  "tokenization": {
+    "empty_tokens": 310,
+    "total_tokens": 9026007
+  },
+  "metadata_completeness": {
+    "source_dataset": 0,
+    "document_length": 0
+  }
+}

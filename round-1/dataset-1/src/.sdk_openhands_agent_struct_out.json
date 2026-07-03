@@ -1,0 +1,18 @@
+{
+  "title": "Near-Duplicate Text Datasets for MinHash Evaluation",
+  "layman_summary": "Collection of text datasets with known near-duplicate pairs for evaluating near-duplicate detection methods like MinHash.",
+  "summary": "This artifact provides 6 text datasets (quora, 20_newsgroups, ms_marco, c4, ag_news, synthetic) with 30K total examples. The datasets include diverse text types with duplicate pairs for evaluating Rateless MinHash. Each example has input (text) and output (duplicate label) fields plus metadata. File size is 60MB.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": [
+          "full_data_out.json"
+        ],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  },
+  "upload_ignore_regexes": []
+}

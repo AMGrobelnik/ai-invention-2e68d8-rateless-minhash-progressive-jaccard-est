@@ -1,0 +1,148 @@
+{
+  "datasets": [
+    {
+      "dataset": "quora",
+      "examples": [
+        {
+          "input": "How imminent is world war III?",
+          "output": "1",
+          "metadata_source_dataset": "quora",
+          "metadata_duplicate_id": "quora_198714",
+          "metadata_similarity_level": "duplicate",
+          "metadata_document_length": 6,
+          "metadata_tokens": [
+            "how",
+            "imminent",
+            "is"
+          ],
+          "metadata_label": 1
+        },
+        {
+          "input": "How do I start preparation for IAS?",
+          "output": "1",
+          "metadata_source_dataset": "quora",
+          "metadata_duplicate_id": "quora_225933",
+          "metadata_similarity_level": "duplicate",
+          "metadata_document_length": 7,
+          "metadata_tokens": [
+            "how",
+            "do",
+            "i"
+          ],
+          "metadata_label": 1
+        },
+        {
+          "input": "What are the best ways to improve my intelligence?",
+          "output": "1",
+          "metadata_source_dataset": "quora",
+          "metadata_duplicate_id": "quora_456287",
+          "metadata_similarity_level": "duplicate",
+          "metadata_document_length": 9,
+          "metadata_tokens": [
+            "what",
+            "are",
+            "the"
+          ],
+          "metadata_label": 1
+        }
+      ]
+    },
+    {
+      "dataset": "ms_marco",
+      "examples": [
+        {
+          "input": "This video provides step-by-step instructions for replacing the gas valve assembly on York, Luxaire, and Coleman furnaces. The most common reason for replacing the gas valve assembly is if the gas val...",
+          "output": "0",
+          "metadata_source_dataset": "ms_marco",
+          "metadata_duplicate_id": null,
+          "metadata_similarity_level": null,
+          "metadata_document_length": 57,
+          "metadata_tokens": [
+            "this",
+            "video",
+            "provides"
+          ],
+          "metadata_query_id": 24670
+        },
+        {
+          "input": "1 Place the tenderloin in a roasting pan. 2  Place the pan in the oven and roast for about 15 minutes, or until the internal temperature reaches 145 degrees Fahrenheit (63 degrees Celsius). 3  Allow t...",
+          "output": "0",
+          "metadata_source_dataset": "ms_marco",
+          "metadata_duplicate_id": null,
+          "metadata_similarity_level": null,
+          "metadata_document_length": 84,
+          "metadata_tokens": [
+            "1",
+            "place",
+            "the"
+          ],
+          "metadata_query_id": 26552
+        },
+        {
+          "input": "Football players burn off an immense number of calories during practices and games. Bonci recommends players consume three meals a day along with snacks before and after practices and games. Each meal...",
+          "output": "1",
+          "metadata_source_dataset": "ms_marco",
+          "metadata_duplicate_id": "msmarco_8836_1_duplicate",
+          "metadata_similarity_level": null,
+          "metadata_document_length": 104,
+          "metadata_tokens": [
+            "football",
+            "players",
+            "burn"
+          ],
+          "metadata_query_id": 28537
+        }
+      ]
+    },
+    {
+      "dataset": "20_newsgroups",
+      "examples": [
+        {
+          "input": "---------- cut here ---------- part 02/03\nM_XN.GGHOL*(3IZ!02'C'\"YM=*][*&WT%S;)5:&$V8A= K/X@2$F[(J )CABC\nM=8H#9!C@^.0%CF]P[  )'._@V/$5S@ ?'#NW61T@A&-G1/H#C'!\\0)T7(*^Q\nM._[3L4,X=K08CH]P[$N>7<*Q\"SKV\"<>N_...",
+          "output": "0",
+          "metadata_source_dataset": "20_newsgroups",
+          "metadata_duplicate_id": null,
+          "metadata_similarity_level": null,
+          "metadata_document_length": 14689,
+          "metadata_tokens": [
+            "cut",
+            "here",
+            "part"
+          ],
+          "metadata_label": 2,
+          "metadata_label_text": "comp.os.ms-windows.misc"
+        },
+        {
+          "input": "\nThere was an article in one of the Toronto papers about this a few\nmonths ago...probably the Globe and Mail...\n\n...any ethical \"journalist\", even a sports journalist should not\naccept free meals from...",
+          "output": "0",
+          "metadata_source_dataset": "20_newsgroups",
+          "metadata_duplicate_id": null,
+          "metadata_similarity_level": null,
+          "metadata_document_length": 60,
+          "metadata_tokens": [
+            "there",
+            "was",
+            "an"
+          ],
+          "metadata_label": 10,
+          "metadata_label_text": "rec.sport.hockey"
+        },
+        {
+          "input": "The Libertarian Second Amendment Caucus in Fort Collins, Colorado,\nsubmitted this as a questionnaire to the city council candidates\nin the upcoming election. As expected, very few of the candidates\n(3...",
+          "output": "0",
+          "metadata_source_dataset": "20_newsgroups",
+          "metadata_duplicate_id": null,
+          "metadata_similarity_level": null,
+          "metadata_document_length": 370,
+          "metadata_tokens": [
+            "the",
+            "libertarian",
+            "second"
+          ],
+          "metadata_label": 16,
+          "metadata_label_text": "talk.politics.guns"
+        }
+      ]
+    }
+  ]
+}

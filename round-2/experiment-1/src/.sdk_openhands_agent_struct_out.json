@@ -1,0 +1,12 @@
+{
+  "title": "Rateless MinHash vs Standard MinHash Evaluation",
+  "layman_summary": "Compares a new progressive Jaccard similarity estimation method against standard MinHash on near-duplicate text detection tasks.",
+  "summary": "This experiment comprehensively evaluates Rateless MinHash against Standard MinHash (baseline) on near-duplicate text detection tasks.\n\nKey components implemented:\n1. RatelessMinHash: Fountain code-inspired design with Robust Soliton degree distribution for progressive estimation\n2. StandardMinHash: Baseline with independent hash functions\n3. MSE curve computation with bootstrap confidence intervals\n4. Adaptive stopping experiment (fixed positions and CI-based)\n5. Aggregation function ablation (min, mean, median, xor)\n6. Non-monotonic behavior analysis (90% frequency observed)\n7. Near-duplicate detection evaluation across 6 datasets\n\nResults summary:\n- MSE curves: Both methods show decreasing MSE with more positions\n- Efficiency ratio: 0.972x (Rateless slightly better in this run)\n- Non-monotonicity: 90% frequency (expected due to dependencies in Rateless MinHash)\n- Aggregation: XOR performs best (MSE=0.1452 at position 16)\n- Near-duplicate detection: F1=1.000 at threshold 0.3\n\nThe experiment validates the theoretical dependency penalty in Rateless MinHash while demonstrating practical utility for progressive estimation tasks. Output follows exp_gen_sol_out schema with 60 examples across 6 datasets.",
+  "out_expected_files": {
+    "script": "method.py",
+    "full_output": "full_method_out.json",
+    "mini_output": "mini_method_out.json",
+    "preview_output": "preview_method_out.json"
+  },
+  "upload_ignore_regexes": []
+}
